@@ -46,7 +46,7 @@
             <mat-form-field appearance="fill">
                 <input matInput value="100">
             </mat-form-field>
-            <mat-form-field appearance="fill" >
+            <mat-form-field appearance="fill">
                 <mat-select [(value)]="to">
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Kilometer">Kilometer</mat-option>
@@ -57,6 +57,66 @@
                     <mat-option value="Mile">Mile</mat-option>
                     <mat-option value="Foot">Foot</mat-option>
                     <mat-option value="Inch">Inch</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="main-convert">
+        <div class="sub-convert">
+            <p class="sub-convert-text">FROM</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="0">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-select [(value)]="from">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Celsius">Celsius</mat-option>
+                    <mat-option value="Fahrenheit">Fahrenheit</mat-option>
+                    <mat-option value="Kelvin">Kelvin</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="sub-convert">
+            <p class="sub-convert-text">TO</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="32">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-select [(value)]="to">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Celsius">Celsius</mat-option>
+                    <mat-option value="Fahrenheit">Fahrenheit</mat-option>
+                    <mat-option value="Kelvin">Kelvin</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="main-convert">
+        <div class="sub-convert">
+            <p class="sub-convert-text">FROM</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-select [(value)]="from">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Litres">Litres</mat-option>
+                    <mat-option value="Millilitres">Millilitres</mat-option>
+                    <mat-option value="Gallons">Gallons</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="sub-convert">
+            <p class="sub-convert-text">TO</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1000">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-select [(value)]="to">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Litres">Litres</mat-option>
+                    <mat-option value="Millilitres">Millilitres</mat-option>
+                    <mat-option value="Gallons">Gallons</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
