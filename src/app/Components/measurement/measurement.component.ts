@@ -13,6 +13,5 @@ export class MeasurementComponent implements OnInit {
   }
   from:string="Meter";
   to="Centimeter";
-  fromtext=1;
   state="length";
 }
