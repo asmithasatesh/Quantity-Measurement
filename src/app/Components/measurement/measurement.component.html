@@ -8,16 +8,16 @@
 <div class="main-container">
     <p class="choose">CHOOSE TYPE</p>
     <div class="sub-container">
-        <div class="block">
-            <img src="../../../assets/scale-nocolor.png " style="width: 11.61px;" />
+        <div class="block" [ngClass]="state == 'length'? 'length-block':''" (click)="state='length'">
+            <img [src]="state == 'length'? '../../../assets/scale-color.png':'../../../assets/scale-nocolor.png' " style="width: 11.61px;" />
             <p>Length</p>
         </div>
-        <div class="block">
-            <img src="../../../assets/hot-nocolor.png" style="width: 29.61px;" />
+        <div  class="block"   [ngClass]="state == 'temperature'? 'temperature-block':''"  (click)="state='temperature'">
+            <img [src]="state == 'temperature'? '../../../assets/hot-color.png':'../../../assets/hot-nocolor.png' " style="width: 29.61px;" />
             <p>Temperature</p>
         </div>
-        <div class="block">
-            <img src="../../../assets/beaker-nocolor.png" style="width: 45.61px;" />
+        <div class="block"  [ngClass]="state == 'volume'? 'volume-block':''"  (click)="state='volume'">
+            <img [src]="state == 'volume'? '../../../assets/beaker-color.png':'../../../assets/beaker-nocolor.png' "style="width: 45.61px;" />
             <p>Volume</p>
         </div>
     </div>
@@ -28,7 +28,7 @@
                 <input matInput value="1">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="from">
+                <mat-select [(value)]="from" disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Kilometer">Kilometer</mat-option>
                     <mat-option value="Meter">Meter</mat-option>
@@ -47,7 +47,7 @@
                 <input matInput value="100">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="to">
+                <mat-select [(value)]="to"  disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Kilometer">Kilometer</mat-option>
                     <mat-option value="Meter">Meter</mat-option>
@@ -68,7 +68,7 @@
                 <input matInput value="0">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="from">
+                <mat-select [(value)]="from"  disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Celsius">Celsius</mat-option>
                     <mat-option value="Fahrenheit">Fahrenheit</mat-option>
@@ -82,7 +82,7 @@
                 <input matInput value="32">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="to">
+                <mat-select [(value)]="to"  disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Celsius">Celsius</mat-option>
                     <mat-option value="Fahrenheit">Fahrenheit</mat-option>
@@ -98,7 +98,7 @@
                 <input matInput value="1">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="from">
+                <mat-select [(value)]="from"  disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Litres">Litres</mat-option>
                     <mat-option value="Millilitres">Millilitres</mat-option>
@@ -112,7 +112,7 @@
                 <input matInput value="1000">
             </mat-form-field>
             <mat-form-field appearance="fill">
-                <mat-select [(value)]="to">
+                <mat-select [(value)]="to"  disableOptionCentering>
                     <mat-option>-- None --</mat-option>
                     <mat-option value="Litres">Litres</mat-option>
                     <mat-option value="Millilitres">Millilitres</mat-option>

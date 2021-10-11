@@ -58,6 +58,7 @@
 
         .block
         {
+            cursor: pointer;
             width: 200px;
             height: 150px;
             background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -78,6 +79,37 @@
                 opacity: 0.21;
             }
         }
+    }
+}
+.length-block
+{
+
+    border: 1px solid #0EC098;
+    background: #EDFDF9 !important;
+    p{
+        color: #0EC098;
+        opacity: 1 !important;
+    }
+}
+.temperature-block{
+
+    border: 1px solid #FD5160;
+    background: #FFEEF0 !important;
+    p{
+
+        color: #FD5160;
+        opacity: 1 !important;
+    }
+}
+.volume-block
+{
+
+    border: 1px solid #7224FF;
+    background: #E8DDFF !important;
+    p{
+
+        color: #7224FF;
+        opacity: 1 !important;
     }
 }
 .main-convert
@@ -124,3 +156,12 @@
    font-size: 31px !important;
    padding-left: 10px !important;
   }
+  .mat-select-panel-wrap{
+    position: relative;
+    top: 26px;
+}
+
+.mat-select-panel-wrap .mat-select-panel{
+    min-width: calc(100% + 12px) !important;
+    transform: translateX(4px) !important
+}
