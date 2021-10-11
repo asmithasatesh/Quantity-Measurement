@@ -11,5 +11,5 @@ export class MeasurementComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+selected:any;
 }

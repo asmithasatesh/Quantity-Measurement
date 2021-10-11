@@ -31,10 +31,50 @@
     justify-content: space-evenly;
     padding-right: 20%;
     align-items: center;
-    & p {
+    p {
         font-size: 25px;
         line-height: 30px;
         color: white;
         margin: 0px !important;
     };
+}
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    // margin-top: 54px;
+    margin: 54px auto 0px auto;
+    width: 40%;
+    .choose{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: bold;
+    }
+    .sub-container
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .block
+        {
+            width: 180px;
+            height: 150px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 45.11px;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                line-height: 19px;
+                font-weight: 600;
+            }
+        }
+    }
 }
