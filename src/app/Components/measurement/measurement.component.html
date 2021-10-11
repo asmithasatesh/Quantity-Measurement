@@ -3,22 +3,62 @@
     <p>History</p>
 </div>
 <div class="sub-header">
-<p>Welcome to Quantity Measurement</p>
+    <p>Welcome to Quantity Measurement</p>
 </div>
 <div class="main-container">
-<p class="choose">CHOOSE TYPE</p>
-<div class="sub-container">
-    <div class="block">
-        <img src="../../../assets/scale-nocolor.png "  style="width: 11.61px;"/>
-        <p>Length</p>
+    <p class="choose">CHOOSE TYPE</p>
+    <div class="sub-container">
+        <div class="block">
+            <img src="../../../assets/scale-nocolor.png " style="width: 11.61px;" />
+            <p>Length</p>
+        </div>
+        <div class="block">
+            <img src="../../../assets/hot-nocolor.png" style="width: 29.61px;" />
+            <p>Temperature</p>
+        </div>
+        <div class="block">
+            <img src="../../../assets/beaker-nocolor.png" style="width: 45.61px;" />
+            <p>Volume</p>
+        </div>
     </div>
-    <div class="block">
-        <img src="../../../assets/hot-nocolor.png" style="width: 29.61px;"/>
-        <p>Temperature</p>
+    <div class="main-convert">
+        <div class="sub-convert">
+            <p class="sub-convert-text">FROM</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-select [(value)]="from">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Kilometer">Kilometer</mat-option>
+                    <mat-option value="Meter">Meter</mat-option>
+                    <mat-option value="Centimeter">Centimeter</mat-option>
+                    <mat-option value="Milimeter">Milimeter</mat-option>
+                    <mat-option value="Micrometer">Micrometer</mat-option>
+                    <mat-option value="Mile">Mile</mat-option>
+                    <mat-option value="Foot">Foot</mat-option>
+                    <mat-option value="Inch">Inch</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="sub-convert">
+            <p class="sub-convert-text">TO</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="100">
+            </mat-form-field>
+            <mat-form-field appearance="fill" >
+                <mat-select [(value)]="to">
+                    <mat-option>-- None --</mat-option>
+                    <mat-option value="Kilometer">Kilometer</mat-option>
+                    <mat-option value="Meter">Meter</mat-option>
+                    <mat-option value="Centimeter">Centimeter</mat-option>
+                    <mat-option value="Milimeter">Milimeter</mat-option>
+                    <mat-option value="Micrometer">Micrometer</mat-option>
+                    <mat-option value="Mile">Mile</mat-option>
+                    <mat-option value="Foot">Foot</mat-option>
+                    <mat-option value="Inch">Inch</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
     </div>
-    <div class="block">
-        <img src="../../../assets/beaker-nocolor.png"  style="width: 45.61px;"/>
-        <p>Volume</p>
-    </div>
-</div>
 </div>

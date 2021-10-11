@@ -11,5 +11,7 @@ export class MeasurementComponent implements OnInit {
 
   ngOnInit(): void {
   }
-selected:any;
+  from:string="Meter";
+  to="Centimeter";
+  fromtext=1;
 }
